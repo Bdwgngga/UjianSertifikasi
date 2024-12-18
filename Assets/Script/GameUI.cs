@@ -38,6 +38,7 @@ public class GameUI : MonoBehaviour
         audioSource.mute = false;
 
         // Singleton untuk memastikan hanya satu instance
+
         if (Instance == null)
         {
             Instance = this;
@@ -69,17 +70,17 @@ public class GameUI : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    public void OnEnable()
     {
         playerInputs.Enable();
     }
 
-    private void OnDisable()
+    public void OnDisable()
     {
         playerInputs.Disable();
     }
 
-    private void TogglePause()
+    public void TogglePause()
     {
         isPaused = !isPaused; // Toggle nilai isPaused
         pauseMenu.SetActive(isPaused); // Aktifkan atau nonaktifkan Pause Menu
@@ -113,7 +114,7 @@ public class GameUI : MonoBehaviour
         UpdateScoreUI();
     }
 
-    private void UpdateScoreUI()
+    public void UpdateScoreUI()
     {
         if (scoreText != null)
         {
@@ -121,7 +122,7 @@ public class GameUI : MonoBehaviour
         }
     }
 
-    private void CountdownTimer()
+    public void CountdownTimer()
     {
         // Kurangi waktu
         currentTime -= Time.deltaTime;
@@ -141,7 +142,7 @@ public class GameUI : MonoBehaviour
         }
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         isGameOver = true;
 
