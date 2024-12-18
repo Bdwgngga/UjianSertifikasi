@@ -17,7 +17,7 @@ public class GameUI : MonoBehaviour
     private PlayerInputs playerInputs;
 
     [Header("Timer Settings")]
-    [SerializeField] private float startTime = 10f; // Waktu mulai dalam detik
+    [SerializeField] private float startTime = 60f; // Waktu mulai dalam detik
     private float currentTime;
 
     [Header("Game Over Settings")]

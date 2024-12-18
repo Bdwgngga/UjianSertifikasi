@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0169642a95e8fce49b967cc4543bcdd8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.99186325
