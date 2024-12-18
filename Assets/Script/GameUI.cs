@@ -126,10 +126,11 @@ public class GameUI : MonoBehaviour
     {
         // Kurangi waktu
         currentTime -= Time.deltaTime;
-
+        Debug.Log("Current Time: " + currentTime);
         // Update UI Timer
         if (timerText != null)
         {
+
             timerText.text = "Timer: " + Mathf.Ceil(currentTime).ToString(); // Tampilkan angka bulat
         }
 

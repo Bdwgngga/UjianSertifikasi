@@ -70,7 +70,7 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log("Enemy mati!");
         Destroy(gameObject, 0.1f);
-        //GameUI.Instance.AddScore(scoreValue);
+        GameUI.Instance.AddScore(scoreValue);
 
         if (deathVFX != null)
         {
